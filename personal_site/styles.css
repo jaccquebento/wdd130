@@ -154,7 +154,7 @@
 
 .contact-grid{
   display: grid;
-  grid-template-rows: 20px, 50px, 150px, 50px, 20px;
+  grid-template-rows: 20px 50px 150px 50px 20px;
 }
 
 .home-button{
@@ -280,3 +280,5 @@ button {
   display: grid;
   text-align: center;
 }
+
+
