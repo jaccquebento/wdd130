@@ -281,4 +281,16 @@ button {
   text-align: center;
 }
 
+@media screen and (max-width: 900px) {
 
+  .home-grid{
+      display: block;
+  }
+
+  .contact{
+    margin-bottom: 20px;
+  }
+  .footer{
+    margin-top: 20px;
+  }
+}

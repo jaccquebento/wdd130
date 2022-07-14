@@ -95,21 +95,42 @@
             grid-column: 4/7;
             grid-row: 20/20;
         }
+        @media screen and (max-width: 900px) {
+
+            .web-grid{
+                display: block;
+            }
+            
+            .background{
+                display: none;
+            }
+
+            .skills{
+                margin-top: 30px;
+                margin-left: 25%;
+                margin-bottom: 30px;
+                width: 50%;
+            }
+
+            .footer{
+                margin-top: 20px;
+            }
+        }
         </style>
         
 </head>
 
 <body>
     <div class="web-grid">
-        <h1 class="title">WEB DESIGN</h1>
         <a class='home-button' href="index.html">HOME</a>
+        <h1 class="title">WEB DESIGN</h1>
         <img class="background" src="images/links_background.png" alt="Links background">
-        <a class='proj-barb' href="projeto_site/index.html" target="_blank">Project Barber Shop</a>
-        <!-- Site built on Alura, first introductory course to HTML5 and CSS3. We work with forms, 
-            tables, positioning, lists and navigation. We used advanced CSS selectors and covered 
-            Viewport and responsive design with media query. -->
-        <a class='proj-dry' href="https://jacquebento.github.io/wdd130/wwr/index.html" target="_blank">Project Dry Oar</a>
-        <a class='insta-posts' href="insta.html" target="_blank">Instagram Posts</a>
+            <a class='proj-barb' href="projeto_site/index.html" target="_blank">Project Barber Shop</a>
+            <!-- Site built on Alura, first introductory course to HTML5 and CSS3. We work with forms, 
+                tables, positioning, lists and navigation. We used advanced CSS selectors and covered 
+                Viewport and responsive design with media query. -->
+            <a class='proj-dry' href="https://jacquebento.github.io/wdd130/wwr/index.html" target="_blank">Project Dry Oar</a>
+            <a class='insta-posts' href="insta.html" target="_blank">Instagram Posts</a>
         <img class="skills" src="images/web_graphic.png" alt="Web Design Skills">
 
         <div class="social">
