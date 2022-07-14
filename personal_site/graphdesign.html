@@ -6,6 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacqueline Bento - Graphic Design</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+      .home-button{
+        position: absolute;
+      }
+      
+      * {box-sizing:border-box}
+      
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      
+      
+      .footer{
+          margin-top: 30px;
+      }
+      
+      
+      .title{
+        font-family: 'Prata', serif;
+        /* font-weight: bolder; */
+        font-size: 40px;
+        color: #cdcfc0;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: center;
+      } 
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        color: #cdcfc0;;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+      </style>
 </head>
 
 <body>
@@ -19,31 +132,31 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 5</div>
-          <img src="images/bc1.png" style="width:100%">
+          <img src="images/bc1.png" style="width:100%" alt="Book Collection">
           <div class="text">Graphic project for a sequence of books, including the creation of the illustrations and the interior design and diagrammation.</div>
         </div>
       
         <div class="mySlides fade">
           <div class="numbertext">2 / 5</div>
-          <img src="images/elis_graphic_large.png" style="width:100%" style="height:100px">
+          <img src="images/elis_graphic_large.png" style="width:100%" style="height:100px" alt="Baptism Poster">
           <div class="text">Poster for decoration of a baptism party.</div>
         </div>
       
         <div class="mySlides fade">
           <div class="numbertext">3 / 5</div>
-          <img src="images/flyer_imob1.png" style="width:100%">
+          <img src="images/flyer_imob1.png" style="width:100%" alt="Flyer">
           <div class="text">In this project I created the logo and the flyer for a real state company.</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">4 / 5</div>
-            <img src="images/flyer_large.png" style="width:100%">
+            <img src="images/flyer_large.png" style="width:100%" alt="Church Poster">
             <div class="text">Poster for a church activity.</div>
           </div>
 
         <div class="mySlides fade">
         <div class="numbertext">5 / 5</div>
-        <img src="images/illustration.png" style="width:100%">
+        <img src="images/illustration.png" style="width:100%" alt="Illustration">
         <div class="text">One sample of my work with the vector illustrations.</div>
         </div>  
       
@@ -99,119 +212,4 @@ function showSlides(n) {
     <a class='site-plan' href="site-plan.html">Site Plan</a>
 </footer>
 </body>
-
-<style>
-.home-button{
-  position: absolute;
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-
-.footer{
-    margin-top: 30px;
-}
-
-
-.title{
-  font-family: 'Prata', serif;
-  /* font-weight: bolder; */
-  font-size: 40px;
-  color: #cdcfc0;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-} 
-
-
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #cdcfc0;;
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-</style>
-
-
 </html>
